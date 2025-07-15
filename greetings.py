@@ -10,11 +10,12 @@ def say_goodbye(name):
     # TODO 2: Implementiere die Abschiedsnachricht.
     print("Auf Wiedersehen,", name + "!")
     pass
-
-#Eingabeaufforderung Name des Benutzers
-name = input("Gib deinen Namen ein: ").strip().capitalize()
+ 
+if __name__ == "__main__":
+    #Eingabeaufforderung Name des Benutzers
+    name = input("Gib deinen Namen ein: ").strip().capitalize()
 
 #Aufrufen der Funktionen say_hello und say_goodbye
-say_hello(name)
-say_goodbye(name)
+    say_hello(name)
+    say_goodbye(name)
 
