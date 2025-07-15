@@ -17,8 +17,10 @@ def subtract(a, b):
 eingabe_zahl1 = int(input("Gib eine Zahl ein: "))
 eingabe_zahl2 = int(input("Gib noch eine Zahl ein: "))
 
+#Aufruf der Funktionen in Variablen gespeichert
 addition = add(eingabe_zahl1, eingabe_zahl2)
 subtraction = subtract(eingabe_zahl1, eingabe_zahl2)
 
+#Ausgabe der Funktionen mit print()
 print(f"{eingabe_zahl1} + {eingabe_zahl2} sind {addition}")
 print(f"{eingabe_zahl1} - {eingabe_zahl2} sind {subtraction}")
