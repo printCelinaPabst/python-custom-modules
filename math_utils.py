@@ -1,26 +1,26 @@
 # math_utils.py
-def add(a, b):
+def add():
     """Addiert zwei Zahlen."""
     # TODO 3: Implementiere die Addition.
+    a = int(input("Gib eine Zahl ein: "))
+    b = int(input("Gib noch eine Zahl ein: "))
     addition = a + b
-    return addition
+    print(f"{a} + {b} sind {addition}")
+
     pass
 
-def subtract(a, b):
+def subtract():
     """Subtrahiert zwei Zahlen."""
     # TODO 4: Implementiere die Subtraktion.
+    a = int(input("Gib eine Zahl ein: "))
+    b = int(input("Gib noch eine Zahl ein: "))
     subtraction = a - b
-    return subtraction
+    print(f"{a} - {b} sind {subtraction}")
+
     pass
 
-#Eingabe des Benutzers
-eingabe_zahl1 = int(input("Gib eine Zahl ein: "))
-eingabe_zahl2 = int(input("Gib noch eine Zahl ein: "))
-
-#Aufruf der Funktionen in Variablen gespeichert
-addition = add(eingabe_zahl1, eingabe_zahl2)
-subtraction = subtract(eingabe_zahl1, eingabe_zahl2)
-
-#Ausgabe der Funktionen mit print()
-print(f"{eingabe_zahl1} + {eingabe_zahl2} sind {addition}")
-print(f"{eingabe_zahl1} - {eingabe_zahl2} sind {subtraction}")
+if __name__ == "__main__":
+    # Wird nur ausgeführt, wenn greetings.py direkt gestartet wird
+    
+    add()
+    subtract()
