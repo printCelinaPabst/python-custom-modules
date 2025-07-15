@@ -1,21 +1,19 @@
 # greetings.py
-def say_hello(name):
+def say_hello():
     """Sagt Hallo zu einer Person."""
-    # TODO 1: Implementiere die Begrüßungsnachricht.
+    name = input("Gib deinen Namen ein: ").strip().capitalize()
     print("Hallo,", name + "!")
     pass
 
-def say_goodbye(name):
+def say_goodbye():
     """Sagt Auf Wiedersehen zu einer Person."""
-    # TODO 2: Implementiere die Abschiedsnachricht.
+    name = input("Gib deinen Namen ein: ").strip().capitalize()
     print("Auf Wiedersehen,", name + "!")
     pass
  
 if __name__ == "__main__":
-    #Eingabeaufforderung Name des Benutzers
-    name = input("Gib deinen Namen ein: ").strip().capitalize()
-
-#Aufrufen der Funktionen say_hello und say_goodbye
-    say_hello(name)
-    say_goodbye(name)
+    # Wird nur ausgeführt, wenn greetings.py direkt gestartet wird
+    
+    say_hello()
+    say_goodbye()
 
